@@ -1,33 +1,48 @@
 # SecureOrder – Order Management System
 
-Full-stack **MERN** procurement/order tracking application with secure JWT authentication, role-based access (User/Admin), real-time updates via Socket.io, audit logging and analytics dashboard.
+Full-stack **MERN** procurement and order tracking application with secure JWT authentication, role-based access control (User / Admin), real-time updates via Socket.io, audit logging, analytics dashboard, and user management.
 
 ## Screenshots
 
-### Dashboard (Admin View)
-![Dashboard - Admin](screenshots/dashboard-admin.png)
+### Signup / Register
+![Signup / Register](screenshots/SIGNUP.png)
 
-### Order Management Page
-![Orders Page](screenshots/orders-page.png)
+### Login
+![Login](screenshots/LOGIN.png)
+
+### Forgot Password
+![Forgot Password](screenshots/FORGOT%20PASSWORD.png)
+
+### Dashboard (Admin View)
+![Dashboard - Admin](screenshots/DASHBOARD.png)
 
 ### Analytics Dashboard (Chart)
-![Analytics Chart](screenshots/analytics-chart.png)
+![Analytics Dashboard](screenshots/ANALYTICS.png)
+
+### Order Management Page
+![Order Management](screenshots/ORDER-MANAGEMENT.png)
+
+### Order Details
+![Order Details](screenshots/ORDERDETAILS.png)
+
+### Profile (User View with Stats)
+![Profile](screenshots/PROFILE.png)
 
 ### Audit Log (Detailed Actions)
-![Audit Log](screenshots/audit-log.png)
+![Audit Log](screenshots/AUDIT%20LOG.png)
 
-### My Profile (User View with Stats)
-![My Profile](screenshots/my-profile.png)
+### Users List (Admin)
+![Users List](screenshots/USERS.png)
 
-### All Users List (Admin)
-![All Users](screenshots/users-list.png)
+### User Orders
+![User Orders](screenshots/USERSORDERS.png)
 
 ## Features
 
 ### Authentication & Security
-- Register/Login with JWT access + refresh tokens
+- Register / Login with JWT access + refresh tokens
 - Forgot Password + Reset via email link (Nodemailer)
-- Role-based access control (RBAC): User vs Administrator
+- Role-based access control (RBAC): Standard User vs Administrator
 - Protected routes & Axios interceptors for token refresh
 
 ### Order Management
@@ -35,20 +50,20 @@ Full-stack **MERN** procurement/order tracking application with secure JWT authe
 - View own orders (users) / all orders (admins)
 - Update status (Pending → Processing → Completed / Cancelled)
 - Delete orders (own pending for users, any for admins)
-- Admin sets unit price → total auto-calculates (quantity × price)
+- Admin sets unit price → total price auto-calculates
 - Real-time updates using Socket.io (live create/update/delete)
 
 ### Admin Tools
 - Global stats cards (Total, Pending, Processing, Completed) with colorful gradients
 - Analytics dashboard – bar chart of order status distribution (Chart.js)
 - Full audit log – tracks every action (who, what, when, details)
-- All users list with roles and quick actions
+- All users list with roles and quick actions (view orders)
 
 ### User Experience
-- Beautiful dark theme with glassmorphism cards
+- Beautiful dark theme with glassmorphism cards & gradients
 - Responsive design (mobile + desktop)
 - Toast notifications, loading spinners, confirmation dialogs
-- My Profile page with personal stats
+- My Profile page with personal order stats
 
 ## Tech Stack
 
@@ -59,7 +74,7 @@ Full-stack **MERN** procurement/order tracking application with secure JWT authe
 - Axios + interceptors  
 - Socket.io-client  
 - Chart.js + react-chartjs-2  
-- SweetAlert2 (logout confirmation)  
+- SweetAlert2 (logout confirmation)
 
 **Backend**  
 - Node.js + Express  
@@ -69,30 +84,6 @@ Full-stack **MERN** procurement/order tracking application with secure JWT authe
 - Socket.io (real-time)  
 - Nodemailer (password reset emails)  
 - Crypto (secure tokens)
-
-## Folder Structure
-SECUREORDERAPI/
-├── frontend/                # React frontend
-│   ├── public/
-│   ├── src/
-│   │   ├── components/      # All pages & UI (Dashboard, Orders, Login, etc.)
-│   │   ├── context/         # AuthContext
-│   │   ├── services/        # api.js (Axios)
-│   │   ├── App.jsx
-│   │   └── index.css
-│   └── package.json
-│
-├── src/                     # Backend source
-│   ├── config/
-│   ├── controllers/
-│   ├── middleware/
-│   ├── models/
-│   ├── routes/
-│   ├── server.js
-│   └── ...
-├── .env                     # MongoDB, JWT, email secrets
-└── README.md
-
 
 ## Local Setup
 
@@ -104,7 +95,7 @@ npm install
 node server.js
 # or npm run dev (if nodemon installed)
 
-### Frontend
+###Frontend
 cd frontend
 npm install
 npm start
