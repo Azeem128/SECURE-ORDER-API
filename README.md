@@ -4,13 +4,13 @@ Full-stack **MERN** procurement and order tracking application with secure JWT a
 
 ## Screenshots
 <div align="center">
-<img src="screenshots/SIGNUP.png" alt="Signup / Register" width="65%" style="border-radius:12px; margin:12px 0;" /><br>
+<img src="screenshots/SIGNUP.png" alt="Signup / Register" width="45%" style="border-radius:8px; margin:8px 0;" /><br>
   <em>Signup / Register Page</em>
 
-  <img src="screenshots/LOGIN.png" alt="Login" width="65%" style="border-radius:12px; margin:12px 0;" /><br>
+  <img src="screenshots/LOGIN.png" alt="Login" width="45%" style="border-radius:8px; margin:8px 0;" /><br>
   <em>Login Page</em>
 
-  <img src="screenshots/FORGOT PASSWORD.png" alt="Forgot Password" width="65%" style="border-radius:12px; margin:12px 0;" /><br>
+  <img src="screenshots/FORGOT PASSWORD.png" alt="Forgot Password" width="45%" style="border-radius:10px; margin:10px 0;" /><br>
   <em>Forgot Password Page</em>
   </div>
 ### Dashboard (Admin View)
