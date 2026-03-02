@@ -3,16 +3,16 @@
 Full-stack **MERN** procurement and order tracking application with secure JWT authentication, role-based access control (User / Admin), real-time updates via Socket.io, audit logging, analytics dashboard, and user management.
 
 ## Screenshots
+<div align="center">
+<img src="screenshots/SIGNUP.png" alt="Signup / Register" width="65%" style="border-radius:12px; margin:12px 0;" /><br>
+  <em>Signup / Register Page</em>
 
-### Signup / Register
-![Signup / Register](screenshots/SIGNUP.png)
+  <img src="screenshots/LOGIN.png" alt="Login" width="65%" style="border-radius:12px; margin:12px 0;" /><br>
+  <em>Login Page</em>
 
-### Login
-![Login](screenshots/LOGIN.png)
-
-### Forgot Password
-![Forgot Password](screenshots/FORGOT%20PASSWORD.png)
-
+  <img src="screenshots/FORGOT PASSWORD.png" alt="Forgot Password" width="65%" style="border-radius:12px; margin:12px 0;" /><br>
+  <em>Forgot Password Page</em>
+  </div>
 ### Dashboard (Admin View)
 ![Dashboard - Admin](screenshots/DASHBOARD.png)
 
